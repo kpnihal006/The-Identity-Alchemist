@@ -5,11 +5,14 @@ export interface SelectedNode {
 }
 
 export interface PersonalRevisionManifest {
+  id: string;
+  timestamp: number;
   silhouette: string;
   aura: string;
   ethos: string;
   revampText: string;
-  selectedNodes: [SelectedNode, SelectedNode, SelectedNode];
+  selectedNodes: SelectedNode[];
+  imageUrl?: string;
 }
 
 export interface AgentLog {
